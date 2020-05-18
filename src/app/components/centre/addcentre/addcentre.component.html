@@ -1,0 +1,79 @@
+<div class="card my-5">
+    <div class="card-header">
+      <h3>Ajout d'un centre</h3>
+    </div>
+    <div class="card-body">
+      <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label for="nom">Nom du centre </label>
+          <input
+            name="nom"
+            id="nom"
+            type="text"
+            placeHolder="nom du centre"
+            class="form-control"
+            required
+           [(ngModel)]="centre.nom"
+          />
+        </div>
+        <div class="form-group">
+          <label for="region">Région </label>
+          <input
+            name="region"
+            id="region"
+            type="text"
+            placeHolder="entrez la région"
+            class="form-control"
+            required
+            [(ngModel)]="centre.region"
+          />
+        </div>
+        <div class="form-group">
+          <label for="departement">Département </label>
+          <input
+            name="departement"
+            id="departement"
+            type="text"
+            placeHolder="entrez le département"
+            class="form-control"
+            required
+            [(ngModel)]="centre.departement"
+          />
+        </div>
+        <div class="form-group">
+          <label for="telephone">Téléphone </label>
+          <input
+            name="telephone"
+            id="telephone"
+            type="text"
+            placeHolder="saisir numéro téléphone"
+            class="form-control"
+            required
+            [(ngModel)]="centre.telephone"
+          />
+        </div>
+  
+        <div class="form-group">
+          <label for="email">Email </label>
+          <input
+            name="email"
+            id="email"
+            type="text"
+            placeHolder="saisir email"
+            class="form-control"
+            required
+            [(ngModel)]="centre.email"
+          />
+        
+        </div>
+        <button
+          type="submit"
+          
+          class="btn btn-info"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+  </div>
+  

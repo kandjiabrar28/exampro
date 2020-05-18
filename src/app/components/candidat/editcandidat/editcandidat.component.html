@@ -1,0 +1,55 @@
+<div class="card my-5">
+  <div class="card-header"><h3>Liste des Candidats</h3>
+    
+      <div class="text-right"><a  href="http://localhost:4200/addcandidat"><button class="btn btn-outline-primary ">
+        <i class="fa fa-plus" aria-hidden="true"></i>
+        Nouveau candidat</button></a></div>
+  </div>
+
+  <div class="card-body">
+    <table class="table table-borderless table-striped">
+      <thead class="theadbg text-left text-white">
+        <tr>
+          <th></th>
+          <th>Prénom</th>
+          <th>Nom</th>
+          <th>Provenance</th>
+          <th>CNI</th>
+          <th>Téléphone</th>
+          <th>Sexe</th>
+          <th>Date nais</th>
+          <th>Niveau</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let candidat of candidats | async">
+          <td>
+            <button class="btn btn-warning btn-sm">
+              <i class="fa fa-pen" aria-hidden="true"></i>
+            </button>
+          </td>
+          <td>{{ candidat.prenom }}</td>
+          <td>{{ candidat.nom }}</td>
+          <td>{{ candidat.provenance }}</td>
+          <td>{{ candidat.cni }}</td>
+          <td>{{ candidat.telephone }}</td>
+          <td>{{ candidat.sexe }}</td>
+          <td>{{ candidat.datenais }}</td>
+          <td>{{ candidat.niveau }}</td>
+          <td>
+            
+            <button  (click)="deleteCandidat(candidat.idcandidat)" class="btn btn-danger btn-sm">
+             
+              <i class="fa fa-trash" aria-hidden="true"></i>
+
+              
+
+
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

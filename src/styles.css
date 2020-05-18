@@ -1,1 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'bootstrap/dist/css/bootstrap.css';
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+
+.texte
+{
+    color : rgb(25, 25, 207);
+    font-size: larger;
+}
+ 
+.texte:hover
+{
+    color : white;
+}
+
+.navbar
+        {
+            background-color: #03224C;
+        }
+
+        .a
+        {
+            color : wheat;
+        }
+         
+        .a:hover
+        {
+            color :  rgb(186, 170, 223);
+            
+        }
+        .li{
+            background-color : wheat;
+            text-align: center;
+            color:#03224C ;
+        }
+        .theadbg{
+            background-color: #03224C
+        }
+
+        .button{
+            text-align: right;
+        }
